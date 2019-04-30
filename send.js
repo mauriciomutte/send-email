@@ -7,7 +7,7 @@ const myEmail = 'Your email';
 const myPassowrd = 'Your email password';
 const sendTo = ['Email to send'];
 
-const source = fs.readFileSync(path.join(__dirname, 'test.hbs'), 'utf8');
+const source = fs.readFileSync(path.join(__dirname, 'template/test.hbs'), 'utf8');
 const template = Handlebars.compile(source);
 
 let transporter = nodemailer.createTransport({
